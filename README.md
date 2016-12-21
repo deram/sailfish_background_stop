@@ -2,6 +2,21 @@
 
 This script monitors sailfish compositor and sends SIGSTOP and SIGCONT to the command executed through it.
 
+## Motivation
+* Mosh can handle loss of connection, and even freezing the process between activations.
+* Remote terminal applications rarely benefit from being active while the screen is not visible.
+* Keeping the connection up in low connectivity places eat battery very fast.
+* Disconnecting and reconnecting to check for activity is annoying.
+
+I wanted a solution that I can keep the mosh connected to screen running in a shell server all the time, 
+and not worry about battery being emptied in the morning.
+
+## Results
+Can keep up connection for few days with single charging of the Jolla phone battery. 
+
+I consider this a huge boost compared to 100% to 15% in couple of hours forgotten 
+on in basement with neglible cellphone coverage.
+
 ## Example 1:
 Run mosh connection to server in fingerterm (use as command in a .desktop file):
 
