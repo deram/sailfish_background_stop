@@ -17,10 +17,18 @@ Can keep up connection for few days with single charging of the Jolla phone batt
 I consider this a huge boost compared to 100% to 15% in couple of hours forgotten 
 on in basement with neglible cellphone coverage.
 
+## Requirements:
+* dbus-monitor
+* sed
+* bash
+
+And the command you intend to run. Mosh in my case.
+
 ## Example 1:
-Run mosh connection to server in fingerterm (use as command in a .desktop file):
+Run mosh connection to server in fingerterm (use as command in a .desktop file).
 
 ```fingerterm -e "/path/to/bgr_stop.sh mosh -- user@example.com screen -rDU"```
+
 
 ## Example 2:
 To run the same mosh command in already opened fingerterm shell, 
